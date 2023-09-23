@@ -160,3 +160,7 @@ cython_debug/
 #.idea/
 
 .old/
+
+# Keep empty logs/ directory.
+/logs/*
+!/logs/.gitkeep
