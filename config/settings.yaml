@@ -1,0 +1,7 @@
+switchbot:
+  api_base_url: https://api.switch-bot.com/v1.0/devices/
+HomeControl:
+  power_off_hour_minutes: "2355"
+TableName:
+  temperature: <temperature table>
+  humidity: <humidity table>

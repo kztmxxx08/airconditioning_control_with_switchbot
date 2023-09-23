@@ -1,0 +1,34 @@
+version: 1
+formatters:
+  fileFormatter:
+    format: '%(asctime)s:%(name)s:%(levelname)s:%(message)s'
+handlers:
+  consoleHandler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: fileFormatter
+    stream: ext://sys.stdout
+  fileHandler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: DEBUG
+    filename: './logs/airconditioning_control.log'
+    formatter: fileFormatter
+    when: 'D'
+    interval: 1
+    backupCount: 7
+  errorFileHandler:
+    class: logging.handlers.TimedRotatingFileHandler
+    level: ERROR
+    filename: "./logs/airconditioning_control_error.log"
+    formatter: fileFormatter
+    when: 'D'
+    interval: 1
+    backupCount: 7
+loggers:
+  exampleLogger:
+    level: DEBUG
+    handlers: [consoleHandler, fileHandler, errorFileHandler]
+    propagate: No
+root:
+  level: DEBUG
+  handlers: [consoleHandler, fileHandler, errorFileHandler]
