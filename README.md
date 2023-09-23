@@ -22,13 +22,14 @@ Create an .env file in the project directory and set the following environment v
 
 ```
 # Switch bot information
-export SWITCHBOT_DEVELOPER_TOKEN="<Switch bot developer token>\"
+export SWITCHBOT_DEVELOPER_TOKEN="<Switch bot developer token>"
 export SWITCHBOT_DEVICE_ID="Switch bot device id"
 # MySQL information
 export MYSQL_HOST="<MYSQL HOST IP or NAME>"
 export MYSQL_USER="<MYSQL USERNAME>"
 export MYSQL_PASSWORD="<MYSQL PASSWORD>"
 export MYSQL_DB_NAME="<MYSQL DB NAME>"
+export MYSQL_PORT="3306"
 ```
 
 ### Define settings.yaml
