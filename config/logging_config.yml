@@ -13,7 +13,7 @@ handlers:
     level: DEBUG
     filename: './logs/airconditioning_control.log'
     formatter: fileFormatter
-    when: 'D'
+    when: 'midnight'
     interval: 1
     backupCount: 7
   errorFileHandler:
@@ -21,7 +21,7 @@ handlers:
     level: ERROR
     filename: "./logs/airconditioning_control_error.log"
     formatter: fileFormatter
-    when: 'D'
+    when: 'midnight'
     interval: 1
     backupCount: 7
 loggers:
