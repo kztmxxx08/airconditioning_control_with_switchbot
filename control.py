@@ -9,7 +9,7 @@ if __name__ == "__main__":
         "air conditioning system Start"
     )
     switchbot_instance = switchbot.SwitchBotOperator()
-    switchbot_instance.air_conditioning_controller()
+    switchbot_instance.controller()
     logging_main.handler(
         logger_name+"end", "INFO",
         "air conditioning system End"

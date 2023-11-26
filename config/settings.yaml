@@ -3,5 +3,4 @@ switchbot:
 HomeControl:
   power_off_hour_minutes: "2355"
 TableName:
-  temperature: <temperature table>
-  humidity: <humidity table>
+  temp_hum_table

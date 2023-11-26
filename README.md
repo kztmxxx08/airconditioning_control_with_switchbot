@@ -8,13 +8,13 @@ This project uses python and Switchbot to control air conditioning.
 電源オフの時間になった際は、エアコンと加湿器の電源オフを実行します。
 気温と湿度はMySQL(MariaDB)のデータベースから読み込んだ値を用います。
 
-現時点では気温、湿度の取得およびエアコンの電源オフのみ実装されています。
+現時点では気温、湿度の取得およびエアコン、加湿器の電源オフのみ実装されています。
 
 This project will run the air conditioner and humidifier based on the temperature and humidity obtained.
 When it is time to turn off the power, it will turn off the air conditioner and humidifier.
 The temperature and humidity values are read from a MySQL (MariaDB) database.
 
-At this time, only the acquisition of temperature and humidity and the turning off of the air conditioner are implemented.
+At this time, only the acquisition of temperature and humidity and the turning off of the air conditioner and humidifier are implemented.
 
 ## 使用方法：Usage
 ### Define environment
